@@ -3,28 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- nhúng font cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>HiLity.net</title>
     <link rel="icon" href="/images/HiLity-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!-- Source JavaScript -->
-     <script src="/Animation/main.js"></script>
     <!-- Header -->
     <header class="header">
-      <div class="content">
+      <div class="header__box">
         <nav class="navbar">
-          <ul>
+          <ul class="header__navbar-list">
             <!-- Logo -->
-            <li>
+            <l>
               <a href="/HTML/index.html"
-                ><img src="/images/HiLity-logo.png" alt="HiLity" width="50" />
+                ><img src="/images/HiLity-logo.png" alt="HiLity" width="55" style="border-radius: 100px;"/>
               </a>
-            </li>
-            <li><a href="/HTML/phimmoi.html">Phim mới</a></li>
-            <li><a href="/HTML/phimbo.html">Phim bộ</a></li>
-            <li><a href="/HTML/phimle.html">Phim lẻ</a></li>
-            <li><a href="/HTML/theloai.html">Thể loại</a></li>
+            </l>
+            <li><a href="/HTML/phimmoi.html" id="colour-1">Phim mới</a></li>
+            <li><a href="/HTML/phimbo.html" id="colour-2">Phim bộ</a></li>
+            <li><a href="/HTML/phimle.html" id="colour-3">Phim lẻ</a></li>
+            <li><a href="/HTML/theloai.html" id="colour-4">Thể loại</a></li>
           </ul>
+          <div class="header__box-search">
+            <input type="text" name="" id="search__input" placeholder="Nhập vào tên bộ phim ...">
+            <button class="search__btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
           <!-- Action -->
           <div class="actions">ACTION</div>
         </nav>
@@ -91,5 +100,7 @@
     <footer>Tobecontinue</footer>
 
     <h1>Home Page</h1>
+    <!-- Source JavaScript -->
+    <script src="/Animation/main.js"></script>
   </body>
 </html>
